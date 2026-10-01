@@ -1,0 +1,14 @@
+{
+  "name": "Pastica — Pasta fresca en Madrid",
+  "short_name": "Pastica",
+  "description": "Trattoria de pasta fresca hecha a mano en Plaza de Cascorro, Madrid.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FEFDF9",
+  "theme_color": "#FEFDF9",
+  "lang": "es",
+  "icons": [
+    { "src": "/pwa-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/pwa-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
