@@ -1,4 +1,5 @@
 import Scatter from '../components/Scatter';
+import { useLang } from '../i18n/LanguageContext';
 import patronAmarilloH from '../assets/patrones/patron-amarillo-horizontal.jpg';
 import rabodetoro from '../assets/platos/rabodetoro.jpg';
 import pistachona from '../assets/platos/pistachona.jpg';
@@ -16,30 +17,31 @@ const DISHES = [
   {
     name: 'Croquetas Rabo de Toro',
     price: '7,90€',
-    tag: null,
+    glutenFree: false,
     photo: rabodetoro,
   },
   {
     name: 'La Pistachona',
     price: '12,50€',
-    tag: 'opción sin gluten',
+    glutenFree: true,
     photo: pistachona,
   },
   {
     name: 'Focaccia Carpicciosa',
     price: '10,90€',
-    tag: null,
+    glutenFree: false,
     photo: carpicciosa,
   },
   {
     name: 'Carbopastica',
     price: '11,90€',
-    tag: 'opción sin gluten',
+    glutenFree: true,
     photo: carbopastica,
   },
 ];
 
 export default function PlatosEstrella() {
+  const { t } = useLang();
   return (
     <section
       className="platos section-pattern"
@@ -47,7 +49,7 @@ export default function PlatosEstrella() {
     >
       <Scatter items={DECO} />
       <div className="container">
-        <h2 className="platos__title">nuestros platos estrella</h2>
+        <h2 className="platos__title">{t('platos.title')}</h2>
 
         <div className="platos__grid">
           {DISHES.map((dish) => (
@@ -58,7 +60,9 @@ export default function PlatosEstrella() {
               <div className="dish-card__info">
                 <h3>{dish.name}</h3>
                 <p className="dish-card__price">{dish.price}</p>
-                {dish.tag && <span className="dish-card__tag">{dish.tag}</span>}
+                {dish.glutenFree && (
+                  <span className="dish-card__tag">{t('platos.glutenFree')}</span>
+                )}
               </div>
             </article>
           ))}

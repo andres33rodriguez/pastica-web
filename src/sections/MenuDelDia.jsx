@@ -1,4 +1,5 @@
 import Scatter from '../components/Scatter';
+import { useLang } from '../i18n/LanguageContext';
 import menuDelDia from '../assets/platos/menudeldia.png';
 import { macarron, albahaca } from '../assets/figuritas';
 
@@ -13,13 +14,14 @@ const DECO = [
  * with the new file, same name.
  */
 export default function MenuDelDia() {
+  const { t } = useLang();
   return (
     <section className="menu-dia">
       <Scatter items={DECO} />
       <div className="container menu-dia__inner">
         <img
           src={menuDelDia}
-          alt="Menú del día — 13,90€ — Alwaysssss al dente"
+          alt={t('menuDia.alt')}
           className="menu-dia__image"
         />
       </div>

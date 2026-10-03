@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Scatter from '../components/Scatter';
+import { useLang } from '../i18n/LanguageContext';
 import WhatsAppButton from '../components/WhatsAppButton';
 import patronAmarillo from '../assets/patrones/patron-amarillo-vertical.jpg';
 import { tornillo2, oreccete } from '../assets/figuritas';
@@ -12,6 +13,7 @@ const DECO = [
 ];
 
 export default function Reservas() {
+  const { t } = useLang();
   const opened = useRef(false);
 
   useEffect(() => {
@@ -27,21 +29,18 @@ export default function Reservas() {
     >
       <Scatter items={DECO} />
       <div className="container reservas__inner">
-        <h1 className="reservas__title">te llevamos a reservar</h1>
-        <p className="reservas__subtitle">
-          se te abrió (o está a punto de abrirse) una pestaña nueva con nuestro sistema
-          de reservas. si tu navegador la bloqueó, dale al botón.
-        </p>
+        <h1 className="reservas__title">{t('reservas.title')}</h1>
+        <p className="reservas__subtitle">{t('reservas.subtitle')}</p>
         <a
           href={RESERVAS_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-crema"
         >
-          Ir a reservar
+          {t('reservas.go')}
         </a>
-        <p className="reservas__or">o si lo prefieres, más directo todavía:</p>
-        <WhatsAppButton label="Escríbenos por WhatsApp" />
+        <p className="reservas__or">{t('reservas.or')}</p>
+        <WhatsAppButton label={t('reservas.whatsapp')} />
       </div>
     </section>
   );

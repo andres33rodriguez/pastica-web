@@ -1,6 +1,7 @@
 import TLink from './TLink';
 import InstagramFeed from './InstagramFeed';
 import Scatter from './Scatter';
+import { useLang } from '../i18n/LanguageContext';
 import logoAzul from '../assets/logos/logo-azul.png';
 import { rigatoni, plumita } from '../assets/figuritas';
 
@@ -10,6 +11,7 @@ const DECO = [
 ];
 
 export default function Footer() {
+  const { t } = useLang();
   const year = new Date().getFullYear();
 
   return (
@@ -22,7 +24,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>© {year} Pastica · Plaza de Cascorro, 21, Centro, 28005 Madrid</p>
-          <TLink to="/aviso-legal" className="footer__legal-link">Aviso legal</TLink>
+          <TLink to="/aviso-legal" className="footer__legal-link">{t('footer.legal')}</TLink>
         </div>
       </div>
     </footer>

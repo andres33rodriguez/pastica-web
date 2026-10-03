@@ -417,7 +417,7 @@ h1, h2, h3, h4 {
 }
 
 .nav__mobile.is-open {
-  max-height: 320px;
+  max-height: 420px;
   border-top-color: #1a1a1a;
 }
 
@@ -1509,4 +1509,49 @@ h1, h2, h3, h4 {
 @media (max-width: 640px) {
   section.hero { padding-top: 210px; }
   section.platos, section.local, section.ubicacion, section.a-domicilio { padding-top: 170px; }
+}
+
+/* ---------- Language switch (ES | EN) ---------- */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.lang-switch button {
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  padding: 6px 11px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background: transparent;
+  color: var(--azul);
+  transition: background 0.15s ease;
+}
+
+.lang-switch button:hover {
+  background: var(--amarillo-palido);
+}
+
+.lang-switch button.is-active {
+  background: var(--amarillo);
+  border-color: #1a1a1a;
+}
+
+.lang-switch__sep {
+  color: var(--azul);
+  opacity: 0.5;
+}
+
+.nav__lang {
+  margin-left: 14px;
+}
+
+.nav__mobile-lang {
+  padding: 14px 24px 18px;
+}
+
+.legal-num {
+  font-family: var(--font-body);
+  font-weight: 700;
 }

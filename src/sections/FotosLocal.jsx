@@ -1,4 +1,5 @@
 import Scatter from '../components/Scatter';
+import { useLang } from '../i18n/LanguageContext';
 import patronRosaAmarillo from '../assets/patrones/patron-rosa-amarillo-vertical.jpg';
 import { spaguetti, tornillo3, mariposa } from '../assets/figuritas';
 import entrada from '../assets/local/entrada.jpg';
@@ -12,12 +13,13 @@ const DECO = [
 ];
 
 const PHOTOS = [
-  { label: 'La entrada', src: entrada },
-  { label: 'La barra', src: barra },
-  { label: 'El salón', src: salon },
+  { key: 'entrance', src: entrada },
+  { key: 'bar', src: barra },
+  { key: 'dining', src: salon },
 ];
 
 export default function FotosLocal() {
+  const { t } = useLang();
   return (
     <section
       className="local section-pattern"
@@ -25,11 +27,11 @@ export default function FotosLocal() {
     >
       <Scatter items={DECO} />
       <div className="container">
-        <h2 className="local__title">así es pastica por dentro</h2>
+        <h2 className="local__title">{t('local.title')}</h2>
         <div className="local__grid">
           {PHOTOS.map((p) => (
-            <div className="local__photo" key={p.label}>
-              <img src={p.src} alt={p.label} />
+            <div className="local__photo" key={p.key}>
+              <img src={p.src} alt={t(`local.${p.key}`)} />
             </div>
           ))}
         </div>

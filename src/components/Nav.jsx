@@ -1,18 +1,21 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import TLink from './TLink';
+import LangSwitch from './LangSwitch';
+import { useLang } from '../i18n/LanguageContext';
 import logoAmarillo from '../assets/logos/logo-amarillo.png';
 
 const LINKS = [
-  { to: '/', label: 'Inicio' },
-  { to: '/el-menu', label: 'El Menú' },
-  { to: '/reservas', label: 'Reservas' },
-  { to: '/a-domicilio', label: 'A domicilio' },
+  { to: '/', key: 'nav.home' },
+  { to: '/el-menu', key: 'nav.menu' },
+  { to: '/reservas', key: 'nav.reservations' },
+  { to: '/a-domicilio', key: 'nav.delivery' },
 ];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const { t } = useLang();
 
   useEffect(() => {
     setOpen(false);
@@ -26,26 +29,27 @@ export default function Nav() {
   return (
     <header className="nav">
       <div className="nav__inner container">
-        <TLink to="/" className="nav__brand" aria-label="Pastica — inicio">
+        <TLink to="/" className="nav__brand" aria-label={t('nav.homeAria')}>
           <img src={logoAmarillo} alt="Pastica" className="nav__brand-wordmark" />
         </TLink>
 
-        <nav className="nav__links" aria-label="Navegación principal">
+        <nav className="nav__links" aria-label={t('nav.main')}>
           {LINKS.map((link) => (
             <TLink
               key={link.to}
               to={link.to}
               className={`nav__link ${location.pathname === link.to ? 'is-active' : ''}`}
             >
-              {link.label}
+              {t(link.key)}
             </TLink>
           ))}
+          <LangSwitch className="nav__lang" />
         </nav>
 
         <button
           type="button"
           className={`nav__burger ${open ? 'is-open' : ''}`}
-          aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+          aria-label={open ? t('nav.close') : t('nav.open')}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
@@ -63,9 +67,12 @@ export default function Nav() {
             className={`nav__mobile-link ${location.pathname === link.to ? 'is-active' : ''}`}
             onClick={() => setOpen(false)}
           >
-            {link.label}
+            {t(link.key)}
           </TLink>
         ))}
+        <div className="nav__mobile-lang">
+          <LangSwitch />
+        </div>
       </div>
     </header>
   );

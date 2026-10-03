@@ -1,4 +1,5 @@
 import Scatter from '../components/Scatter';
+import { useLang } from '../i18n/LanguageContext';
 import patronAzul from '../assets/patrones/patron-azul-vertical.jpg';
 import { tomate, plumita } from '../assets/figuritas';
 
@@ -10,13 +11,10 @@ const DECO = [
 const MAPS_SRC =
   'https://www.google.com/maps?q=Plaza+de+Cascorro,+21,+Centro,+28005+Madrid&output=embed';
 
-const HORARIO = [
-  ['Lunes a jueves', '13:00 – 23:30'],
-  ['Viernes y sábado', '13:00 – 00:30'],
-  ['Domingo', '10:00 – 23:30'],
-];
+const HORARIO_KEYS = ['monThu', 'friSat', 'sun'];
 
 export default function Ubicacion() {
+  const { t } = useLang();
   return (
     <section
       className="ubicacion section-pattern"
@@ -25,26 +23,26 @@ export default function Ubicacion() {
       <Scatter items={DECO} />
       <div className="container ubicacion__inner">
         <div className="ubicacion__info">
-          <h2 className="ubicacion__title">encuéntranos</h2>
+          <h2 className="ubicacion__title">{t('ubicacion.title')}</h2>
           <p className="ubicacion__address">Plaza de Cascorro, 21, Centro, 28005 Madrid</p>
 
           <table className="ubicacion__horario">
             <tbody>
-              {HORARIO.map(([day, hours]) => (
-                <tr key={day}>
-                  <td>{day}</td>
-                  <td>{hours}</td>
+              {HORARIO_KEYS.map((key) => (
+                <tr key={key}>
+                  <td>{t(`ubicacion.days.${key}`)}</td>
+                  <td>{t(`ubicacion.hours.${key}`)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
-          <p className="ubicacion__note font-script">los domingos nos da por madrugar</p>
+          <p className="ubicacion__note font-script">{t('ubicacion.note')}</p>
         </div>
 
         <div className="ubicacion__map">
           <iframe
             src={MAPS_SRC}
-            title="Ubicación de Pastica en Google Maps"
+            title={t('ubicacion.mapTitle')}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen

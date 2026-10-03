@@ -1,4 +1,5 @@
 import Scatter from '../components/Scatter';
+import { useLang } from '../i18n/LanguageContext';
 import WhatsAppButton from '../components/WhatsAppButton';
 import TLink from '../components/TLink';
 import patronAmarillo from '../assets/patrones/patron-amarillo-vertical.jpg';
@@ -10,6 +11,7 @@ const DECO = [
 ];
 
 export default function CTAFinal() {
+  const { t } = useLang();
   return (
     <section
       className="cta-final section-pattern"
@@ -17,17 +19,15 @@ export default function CTAFinal() {
     >
       <Scatter items={DECO} />
       <div className="container cta-final__inner">
-        <h2 className="cta-final__title">es hora de comer.</h2>
-        <p className="cta-final__subtitle">
-          reserva mesa, pide para llevar o pídelo a domicilio — tú eliges
-        </p>
+        <h2 className="cta-final__title">{t('cta.title')}</h2>
+        <p className="cta-final__subtitle">{t('cta.subtitle')}</p>
         <div className="cta-final__actions">
-          <WhatsAppButton label="Reservar por WhatsApp" />
+          <WhatsAppButton label={t('cta.whatsapp')} />
           <TLink to="/reservas" className="btn btn-rojo">
-            Reservas
+            {t('cta.reservations')}
           </TLink>
           <TLink to="/a-domicilio" className="btn btn-rojo">
-            A domicilio
+            {t('cta.delivery')}
           </TLink>
         </div>
       </div>

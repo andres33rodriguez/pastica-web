@@ -1,4 +1,5 @@
 import Scatter from '../components/Scatter';
+import { useLang } from '../i18n/LanguageContext';
 import glovoLogo from '../assets/delivery/glovo.png';
 import uberEatsLogo from '../assets/delivery/ubereats.png';
 import { spaguetti, tomate, macarron } from '../assets/figuritas';
@@ -13,15 +14,14 @@ const DECO = [
 ];
 
 export default function ADomicilio() {
+  const { t } = useLang();
   return (
     <section className="a-domicilio">
       <Scatter items={DECO} />
       <div className="container a-domicilio__inner">
-        <p className="eyebrow">pastica en tu sofá</p>
-        <h1 className="a-domicilio__title">a domicilio</h1>
-        <p className="a-domicilio__subtitle">
-          pide en dos clics y nosotros nos encargamos de que llegue ALWAYSSSS al dente.
-        </p>
+        <p className="eyebrow">{t('domicilio.eyebrow')}</p>
+        <h1 className="a-domicilio__title">{t('domicilio.title')}</h1>
+        <p className="a-domicilio__subtitle">{t('domicilio.subtitle')}</p>
 
         <div className="a-domicilio__buttons">
           <a
@@ -30,7 +30,7 @@ export default function ADomicilio() {
             rel="noopener noreferrer"
             className="delivery-btn delivery-btn--glovo"
           >
-            <img src={glovoLogo} alt="Pedir en Glovo" />
+            <img src={glovoLogo} alt={t('domicilio.glovoAlt')} />
           </a>
           <a
             href={UBEREATS_URL}
@@ -38,7 +38,7 @@ export default function ADomicilio() {
             rel="noopener noreferrer"
             className="delivery-btn delivery-btn--ubereats"
           >
-            <img src={uberEatsLogo} alt="Pedir en Uber Eats" />
+            <img src={uberEatsLogo} alt={t('domicilio.uberAlt')} />
           </a>
         </div>
       </div>

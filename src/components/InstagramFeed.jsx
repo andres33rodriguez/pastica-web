@@ -5,6 +5,7 @@ import pasta from '../assets/instagram/pasta.jpg';
 import comiendo from '../assets/instagram/comiendo.jpg';
 import ana2 from '../assets/instagram/ana2.jpg';
 import { manoCapisci } from '../assets/mano-capisci';
+import { useLang } from '../i18n/LanguageContext';
 
 const IG_URL = 'https://www.instagram.com/pastica.es/';
 
@@ -15,6 +16,7 @@ const PHOTOS = [platos, pareja, mesa, pasta, comiendo, ana2];
  * matching file in src/assets/instagram/ — same name, same spot in PHOTOS.
  */
 export default function InstagramFeed({ compact = false }) {
+  const { t } = useLang();
   return (
     <div className={`ig-feed ${compact ? 'ig-feed--compact' : ''}`}>
       {!compact && (
@@ -23,7 +25,7 @@ export default function InstagramFeed({ compact = false }) {
             <img src={manoCapisci.rojo} alt=""className="ig-feed__avatar-deco" />
             <div>
               <p className="ig-feed__handle">@pastica.es</p>
-              <p className="ig-feed__followers">síguenos para más pasta y más lío</p>
+              <p className="ig-feed__followers">{t('instagram.followers')}</p>
             </div>
           </div>
           <a
@@ -32,7 +34,7 @@ export default function InstagramFeed({ compact = false }) {
             rel="noopener noreferrer"
             className="btn btn-crema ig-feed__follow"
           >
-            Follow
+            {t('instagram.follow')}
           </a>
         </div>
       )}
@@ -45,7 +47,7 @@ export default function InstagramFeed({ compact = false }) {
             target="_blank"
             rel="noopener noreferrer"
             className="ig-tile"
-            aria-label="Ver publicación en Instagram"
+            aria-label={t('instagram.postAria')}
           >
             <img src={photo} alt="" className="ig-tile__photo" loading="lazy" />
           </a>
@@ -54,7 +56,7 @@ export default function InstagramFeed({ compact = false }) {
 
       {compact && (
         <a href={IG_URL} target="_blank" rel="noopener noreferrer" className="ig-feed__handle-link">
-          @pastica.es — síguenos
+          {t('instagram.handleLink')}
         </a>
       )}
     </div>
