@@ -1,7 +1,7 @@
 export default {
   nav: {
     home: 'Inicio',
-    menu: 'El Menú',
+    menu: 'La Carta',
     reservations: 'Reservas',
     delivery: 'A domicilio',
     main: 'Navegación principal',
@@ -15,7 +15,7 @@ export default {
     title: 'pasta fresca, hecha a mano cada día',
     subtitle:
       'Harina, huevo y mucha pasión. Disfruta la auténtica experiencia de una trattoria, con un toque moderno y desenfadado.',
-    cta: 'Ver el menú',
+    cta: 'Ver la carta',
   },
   menuDia: {
     alt: 'Menú del día — 13,90€ — Alwaysssss al dente',
