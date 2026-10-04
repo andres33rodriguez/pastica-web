@@ -22,6 +22,8 @@ import {
   SPRITZ,
   COCTELERIA,
   MENU_DEL_DIA_DETALLE,
+  DESAYUNOS,
+  DESAYUNOS_HORARIO,
 } from '../data/menu';
 
 const DECO = [
@@ -127,6 +129,14 @@ export default function ElMenu() {
               </dl>
               <p className="menu-del-dia-tab__price">13,90€</p>
             </div>
+          )}
+
+          {active === 'desayunos' && (
+            <>
+              <SubHeading>Desayunos</SubHeading>
+              <p className="menu-note">{DESAYUNOS_HORARIO}</p>
+              <DishGrid items={DESAYUNOS} />
+            </>
           )}
         </div>
       </section>

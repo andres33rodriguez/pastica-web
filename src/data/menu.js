@@ -23,6 +23,7 @@ export const CATEGORIES = [
   { id: 'postres', label: 'Postres' },
   { id: 'bebidas', label: 'Bebidas' },
   { id: 'menu-del-dia', label: 'Menú del día' },
+  { id: 'desayunos', label: 'Desayunos' },
 ];
 
 export const ENTRANTES = [
@@ -210,6 +211,36 @@ export const PASTAS = [
     desc: 'Gnocchi con crema de pistacchio, parmigiano y mortadella crocante por encima. Alguien tenía que freír la mortadela y nos alegramos de haber sido nosotros.',
     chips: [glutenFree('+1,50€')],
     photo: frivoleza,
+  },
+];
+
+export const DESAYUNOS_HORARIO = 'Disponible de 9:00 a 12:00';
+
+export const DESAYUNOS = [
+  {
+    name: 'Focaccia con Tomate 🍅',
+    price: '4€',
+    desc: 'Focaccia italiana tostada con tomate de la casa, aceite de oliva y un toque de sal.',
+  },
+  {
+    name: 'Focaccia Mortadella',
+    price: '6€',
+    desc: 'Focaccia italiana con mortadella italiana, stracciatella y pistacho.',
+  },
+  {
+    name: 'Focaccia Stracciatella 🍅🌿',
+    price: '6€',
+    desc: 'Focaccia italiana con stracciatella cremosa, tomates confitados, aceite de oliva y albahaca fresca.',
+  },
+  {
+    name: 'Focaccia Caprese 🌿',
+    price: '7€',
+    desc: 'Focaccia italiana con tomate de la casa, burrata cremosa, pesto de albahaca y aceite de oliva.',
+  },
+  {
+    name: 'Huevos Turcos 🍳',
+    price: '6€',
+    desc: 'Huevos sobre una base cremosa de yogur griego con ajo y pimienta, acompañados de focaccia tostada.',
   },
 ];
 

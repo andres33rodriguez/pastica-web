@@ -75,6 +75,18 @@ export default {
   'Tiramisú pistacchio lover':
     'The tiramisu went to therapy, reinvented itself, and came back green.',
 
+  // Desayunos
+  'Focaccia con Tomate 🍅':
+    'Toasted Italian focaccia with house tomato, olive oil, and a pinch of salt.',
+  'Focaccia Mortadella':
+    'Italian focaccia with Italian mortadella, stracciatella, and pistachio.',
+  'Focaccia Stracciatella 🍅🌿':
+    'Italian focaccia with creamy stracciatella, confit tomatoes, olive oil, and fresh basil.',
+  'Focaccia Caprese 🌿':
+    'Italian focaccia with house tomato, creamy burrata, basil pesto, and olive oil.',
+  'Huevos Turcos 🍳':
+    'Eggs over a creamy Greek yogurt base with garlic and pepper, served with toasted focaccia.',
+
   // Bebidas — Coctelería
   'Margarita Spritz':
     'Our take on a margarita: tequila, lime, passion fruit, and of course, Aperol. With a touch of tajín that makes everything better.',
