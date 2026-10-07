@@ -2,8 +2,8 @@ import Scatter from '../components/Scatter';
 import { useLang } from '../i18n/LanguageContext';
 import patronAmarilloH from '../assets/patrones/patron-amarillo-horizontal.jpg';
 import rabodetoro from '../assets/platos/rabodetoro.jpg';
-import pistachona from '../assets/platos/pistachona.jpg';
 import carpicciosa from '../assets/carta/carpicciosa.jpg';
+import gnocchisima from '../assets/carta/gnocchisima.jpg';
 import carbopastica from '../assets/carta/carbopastica.jpg';
 import { albahaca, oreccete, tornillo2 } from '../assets/figuritas';
 
@@ -16,19 +16,19 @@ const DECO = [
 const DISHES = [
   {
     name: 'Croquetas Rabo de Toro',
-    price: '7,90€',
+    price: '8,90€',
     glutenFree: false,
     photo: rabodetoro,
   },
   {
-    name: 'La Pistachona',
-    price: '12,50€',
+    name: 'Gnocchisima',
+    price: '13,00€',
     glutenFree: true,
-    photo: pistachona,
+    photo: gnocchisima,
   },
   {
     name: 'Focaccia Carpicciosa',
-    price: '10,90€',
+    price: '11,00€',
     glutenFree: false,
     photo: carpicciosa,
   },

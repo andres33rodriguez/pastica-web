@@ -37,8 +37,6 @@ export default {
   // Alguito más — Ensaladas
   'Ensalada de Stracciatella':
     'Plenty of creamy stracciatella, sweet tomatoes, and arugula, made with lots of love.',
-  'La Alfombra Roja':
-    'Carpaccio at its best: arugula, parmesan, balsamic cream, and all the fanfare a carpaccio deserves.',
   'Ensalada Burrata XL':
     'Creamy XL burrata, cherry tomatoes, arugula, and pesto. Creamy and delicious. Served with toasted focaccia, perfect alongside it.',
 
@@ -88,10 +86,26 @@ export default {
     'Eggs over a creamy Greek yogurt base with garlic and pepper, served with toasted focaccia.',
 
   // Bebidas — Coctelería
-  'Margarita Spritz':
-    'Our take on a margarita: tequila, lime, passion fruit, and of course, Aperol. With a touch of tajín that makes everything better.',
-  'Paloma Spritz':
-    'A classic: grapefruit soda, tequila, agave, and our touch of Sarti take this drink to another level. With a tajín rim for the perfect kick.',
-  'Mermelada Spritz':
-    'Orange marmalade, prosecco, and Aperol. The newest and most different one.',
+
+  // Entrantes (v8)
+  'Focaccia de Cherry':
+    'Fluffy focaccia, crispy on the outside, topped with roasted cherry tomatoes and olive oil. Simple and juicy, perfect for sharing.',
+
+  // Ensaladas (v8)
+  'Carpaccio de Gala':
+    'Thin slices of carpaccio over arugula, with tomato, shaved parmesan, olive oil, and balsamic reduction. Served with our house focaccia.',
+  'Alcachofas Romana':
+    'Oven-roasted artichokes, tender inside and golden outside, covered in a creamy carbonara sauce. A tribute to Roman cuisine, perfect for sharing.',
+  'Vitello Bella Vita':
+    'Thin slices of low-temperature-cooked veal, covered with a creamy tuna sauce and finished with capers. An Italian classic, served cold with our house focaccia.',
+
+  // Bebidas — Coctelería (v8)
+  'Pomelo Neón':
+    'Tequila, fresh lime, and grapefruit soda. Fresh, citrusy, and sparkling — to kick off the night.',
+  'Cinnamon Kiss':
+    'Freshly brewed espresso, vodka, Mr. Black coffee liqueur, and Monin cinnamon roll syrup. Like your favorite pastry, but in a glass.',
+  'Burbuja Tropical':
+    'Tequila, lime, and cava, with Monin spicy mango or passion fruit syrup, your choice. A margarita with bubbles — fresh and fruity.',
+  'Piña Dorada':
+    'Planteray Original Dark rum, Monin cinnamon syrup, lime, and pineapple soda. Tropical and spiced — tastes like vacation.',
 };

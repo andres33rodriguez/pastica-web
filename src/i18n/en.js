@@ -73,6 +73,13 @@ export default {
     glovoAlt: 'Order on Glovo',
     uberAlt: 'Order on Uber Eats',
   },
+  menu: {
+    comingSoon: 'Coming soon',
+  },
+  curtain: {
+    enter: 'Press to enter',
+    aria: 'Press to see the menu',
+  },
   footer: {
     legal: 'Legal notice',
   },

@@ -1,5 +1,4 @@
 import rabodetoro from '../assets/platos/rabodetoro.jpg';
-import pistachona from '../assets/platos/pistachona.jpg';
 import tequenosqueso from '../assets/carta/tequenosqueso.jpg';
 import tequenospizza from '../assets/carta/tequenospizza.jpg';
 import saquitoscroccante from '../assets/carta/saquitoscroccante.jpg';
@@ -33,20 +32,9 @@ export const ENTRANTES = [
     desc: 'Queso provolone ahumado en salsa ragú a la bolognesa gratinado con queso parmigiano con focaccia perfecta para dipear.',
   },
   {
-    name: 'Croquetas Carbonara',
-    price: '7,90€',
-    desc: 'La croqueta que se cree italiana pero lleva toda la vida en tu corazón.',
-  },
-  {
-    name: 'Croquetas de Rabo de Toro',
-    price: '7,90€',
-    desc: 'Esto no es una croqueta. Esto es un abrazo de abuela convertido en fritura. Guiso de toda la vida con forma de bocado perfecto.',
-    photo: rabodetoro,
-  },
-  {
-    name: 'Croquetas de Cheddar y Jalapeños',
-    price: '7,90€',
-    desc: 'Para los que piensan que Italia necesitaba un poco más de fuego. Cuidado: pican. Y no nos arrepentimos.',
+    name: 'Focaccia de la Casa',
+    price: '3,00€',
+    desc: 'Tiras de focaccia artesanal recién horneadas con aceite de oliva.',
   },
   {
     name: 'Focaccia al Ajo',
@@ -54,9 +42,25 @@ export const ENTRANTES = [
     desc: 'Tiras de focaccia con mantequilla y ajo. Un vicio sin culpa.',
   },
   {
-    name: 'Focaccia de la Casa',
-    price: '2,50€',
-    desc: 'Tiras de focaccia artesanal recién horneadas con aceite de oliva.',
+    name: 'Focaccia de Cherry',
+    price: '4,50€',
+    desc: 'Focaccia esponjosa y crujiente por fuera, cubierta de tomates cherry asados con aceite de oliva. Sencilla y jugosa, perfecta para compartir.',
+  },
+  {
+    name: 'Croquetas Carbonara',
+    price: '7,90€',
+    desc: 'La croqueta que se cree italiana pero lleva toda la vida en tu corazón.',
+  },
+  {
+    name: 'Croquetas de Rabo de Toro',
+    price: '8,90€',
+    desc: 'Esto no es una croqueta. Esto es un abrazo de abuela convertido en fritura. Guiso de toda la vida con forma de bocado perfecto.',
+    photo: rabodetoro,
+  },
+  {
+    name: 'Croquetas de Cheddar y Jalapeños',
+    price: '7,90€',
+    desc: 'Para los que piensan que Italia necesitaba un poco más de fuego. Cuidado: pican. Y no nos arrepentimos.',
   },
   {
     name: 'Tequeños de Queso',
@@ -91,30 +95,30 @@ export const ENTRANTES = [
 export const FOCACCIAS = [
   {
     name: 'Carpicciosa',
-    price: '10,90€',
+    price: '11,00€',
     desc: 'Carpaccio de ternera, stracciatella, parmigiano, trufa y rúcula. Sí, en una focaccia. Sí, es tan buena como suena.',
     photo: carpicciosa,
   },
   {
     name: 'Salame Mío',
-    price: '10,90€',
+    price: '11,00€',
     desc: 'Salame picante, queso gorgonzola, rúcula y nueces. Cremosa, fresca, con un punto de fuego que no avisa pero tampoco pide perdón.',
     photo: salamemio,
   },
   {
     name: 'Carbonara',
-    price: '10,90€',
+    price: '11,00€',
     desc: 'Focaccia rellena con nuestra cremosa salsa carbonara, guanciale crujiente y queso parmigiano rallado. Clásico delicioso intocable.',
     photo: focacciacarbonara,
   },
   {
     name: 'Mortadelísima',
-    price: '10,90€',
+    price: '11,00€',
     desc: 'Mortadela al tartufo, stracciatella, pistacchio, pesto y rúcula. Una focaccia con complejo de plato estrella de restaurante.',
   },
   {
     name: 'Vegetariana',
-    price: '10,90€',
+    price: '11,00€',
     desc: 'Stracciatella, pistacchio, tomate, parmesano, rúcula y pesto genovese. La focaccia que llegó sin carne y se ganó la mesa entera igual. Sin trampa, sin trucos. Solo muy buena.',
     photo: focacciavegetariana,
   },
@@ -128,15 +132,24 @@ export const ENSALADAS = [
     chips: [{ icon: '🥖', text: 'Focaccia +2€' }],
   },
   {
-    name: 'La Alfombra Roja',
+    name: 'Carpaccio de Gala',
     price: '8,50€',
-    desc: 'Carpaccio en su mejor versión: rúcula, parmesano, crema de balsámico y toda la pompa de carpaccio que merece.',
-    chips: [{ icon: '🥖', text: 'Focaccia +2€' }],
+    desc: 'Finas láminas de carpaccio sobre rúcula, con tomate, lascas de parmesano, aceite de oliva y reducción de balsámico. Se sirve con nuestra focaccia de la casa.',
   },
   {
     name: 'Ensalada Burrata XL',
     price: '12,90€',
     desc: 'Burrata XL cremosa, tomates cherry, rúcula, y pesto. Cremosa y deliciosa. Con focaccia tostada perfecta para acompañarla.',
+  },
+  {
+    name: 'Vitello Bella Vita',
+    price: '12,00€',
+    desc: 'Finas láminas de ternera cocinada a baja temperatura, cubiertas con una cremosa salsa de atún y terminadas con alcaparras. Un clásico italiano, servido frío con nuestra focaccia de la casa.',
+  },
+  {
+    name: 'Alcachofas Romana',
+    priceKey: 'menu.comingSoon',
+    desc: 'Alcachofas asadas al horno, tiernas por dentro y doradas por fuera, bañadas en una cremosa salsa carbonara. Un homenaje a la cocina de Roma, ideal para compartir.',
   },
 ];
 
@@ -184,11 +197,10 @@ export const PASTAS = [
     price: '12,50€',
     desc: 'Busiate con pesto, tomates dulces, ralladura de limón, pistacchio triturado y coronado con una stracciatella. El pesto de siempre con un frescor que lo cambia todo.',
     chips: [glutenFree('+1,50€')],
-    photo: pistachona,
   },
   {
     name: 'La del Toro',
-    price: '13,50€',
+    price: '14,00€',
     desc: '6 ravioli de rabo de toro XL guisado a fuego lento hasta que no queda más que sabor, bañado en pesto rosso y ralladura de limón. Todo el carácter del sur.',
     chips: [glutenFree('+2,50€ (con ravioli de picota y espinacas)')],
   },
@@ -200,7 +212,7 @@ export const PASTAS = [
   },
   {
     name: 'Gnocchisima',
-    price: '12,50€',
+    price: '13,00€',
     desc: 'Lo mejor de dos mundos: gnocchi con nuestra bolognesa hecha a fuego lento junto a nuestra carbonara cubierta de queso parmigiano y guanciale por encima. ¡¡¡Una locura divina!!!',
     chips: [glutenFree('+1,50€')],
     photo: gnocchisima,
@@ -247,7 +259,7 @@ export const DESAYUNOS = [
 export const POSTRES = [
   {
     name: 'Tarta de Queso',
-    price: '6,90€',
+    price: '7,50€',
     desc: 'Horneada, con una cremosidad que no tiene explicación lógica acompañado de crema de cacao con avellanas. La favorita de la casa.',
     chips: [{ icon: '🌾', text: 'Opción sin gluten' }],
   },
@@ -281,8 +293,8 @@ export const CAFES = [
 ];
 
 export const BEBIDAS_SUAVES = [
-  ['Agua sin gas Panna', '2,50€'],
-  ['Agua con gas San Pellegrino', '3,00€'],
+  ['Agua sin gas Panna', '3,00€'],
+  ['Agua con gas San Pellegrino', '4,00€'],
   ['Refrescos', '3,50€'],
   ['Limonada Frozen (pulpa de fresa o maracuyá +0,50€)', '4,00€'],
   ['Vermú', '4,00€'],
@@ -296,6 +308,7 @@ export const BEBIDAS_SUAVES = [
 export const CERVEZAS = [
   ['Doble de Mahou', '3,00€'],
   ['Clarita', '3,00€'],
+  ['Jarra de Cerveza', '5,00€'],
   ['Tercio Alhambra (cubetazo 15,00€)', '4,00€'],
   ['Tercio Peroni (cubetazo 15,00€)', '4,00€'],
   ['Tercio Moretti (cubetazo 15,00€)', '4,00€'],
@@ -312,30 +325,35 @@ export const COPAS = [
 
 export const SPRITZ = [
   ['Aperol Frozen', '5,00€'],
-  ['Limoncello Spritz', '6,00€'],
-  ['Aperol Spritz', '6,00€'],
+  ['Limoncello Spritz', '7,00€'],
+  ['Aperol Spritz', '7,00€'],
   ['Crodino Spritz', '4,00€'],
-  ['Sarti Spritz', '6,00€'],
-  ['Mondoro Hugo Spritz', '6,00€'],
-  ['Campari Spritz', '7,00€'],
+  ['Sarti Spritz', '7,00€'],
+  ['Mondoro Hugo Spritz', '7,00€'],
+  ['Campari Spritz', '8,00€'],
   ['Negroni Spritz', '8,00€'],
 ];
 
 export const COCTELERIA = [
   {
-    name: 'Margarita Spritz',
-    price: '8,00€',
-    desc: 'Nuestra versión de margarita: tequila, limón, maracuyá y, por supuesto, Aperol. Con un toque de tajín que lo hace todo mejor.',
+    name: 'Pomelo Neón',
+    price: '11,00€',
+    desc: 'Tequila, limón fresco y soda de pomelo. Fresco, cítrico y con chispa, para empezar la noche.',
   },
   {
-    name: 'Paloma Spritz',
-    price: '8,00€',
-    desc: 'Un clásico: soda de pomelo, tequila, agave y nuestro toque de Sarti lleva este trago a otro nivel. Con borde de tajín que le da el picor perfecto.',
+    name: 'Cinnamon Kiss',
+    price: '11,00€',
+    desc: 'Expreso recién hecho, vodka, licor de café Mr. Black y sirope Monin de cinnamon roll. Como tu bollo favorito, pero en copa.',
   },
   {
-    name: 'Mermelada Spritz',
-    price: '8,00€',
-    desc: 'Mermelada de naranja, prosecco y Aperol. Lo más nuevo y diferente.',
+    name: 'Burbuja Tropical',
+    price: '11,00€',
+    desc: 'Tequila, limón y cava, con sirope Monin de mango picante o de maracuyá, a elegir. Una margarita con burbujas, fresca y frutal.',
+  },
+  {
+    name: 'Piña Dorada',
+    price: '11,00€',
+    desc: 'Ron Planteray Original Dark, sirope Monin de canela, limón y soda de piña. Tropical y especiado, sabe a vacaciones.',
   },
 ];
 
@@ -350,6 +368,6 @@ export const WHEEL_DISHES = [
   { name: 'Gnocchisima', photo: gnocchisima },
   { name: 'Focaccia Carpicciosa', photo: carpicciosa },
   { name: 'Mrs Bolognesa', photo: mrsbolognesa },
-  { name: 'La Pistachona', photo: pistachona },
   { name: 'Carbopastica', photo: carbopastica },
+  { name: 'Tequeños', photo: tequenosqueso },
 ];

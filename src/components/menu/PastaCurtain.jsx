@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useLang } from '../../i18n/LanguageContext';
 
 const STRAND_COUNT = 22;
 
 export default function PastaCurtain({ onDone }) {
+  const { t } = useLang();
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
 
@@ -30,7 +32,7 @@ export default function PastaCurtain({ onDone }) {
       type="button"
       className={`pasta-curtain ${open ? 'is-open' : ''}`}
       onClick={reveal}
-      aria-label="Toca para ver la carta"
+      aria-label={t('curtain.aria')}
     >
       {strands.map((i) => {
         const fromCenter = i - mid;
@@ -52,7 +54,7 @@ export default function PastaCurtain({ onDone }) {
       })}
 
       <span className="pasta-curtain__hint">
-        <span className="pasta-curtain__hint-tap">toca para entrar</span>
+        <span className="pasta-curtain__hint-tap">{t('curtain.enter')}</span>
       </span>
     </button>
   );
