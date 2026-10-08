@@ -132,7 +132,7 @@ export const ENSALADAS = [
   },
   {
     name: 'Carpaccio de Gala',
-    price: '8,50€',
+    price: '12,00€',
     desc: 'Finas láminas de carpaccio sobre rúcula, con tomate, lascas de parmesano, aceite de oliva y reducción de balsámico. Se sirve con nuestra focaccia de la casa.',
   },
   {
