@@ -100,12 +100,12 @@ export default {
     'Thin slices of low-temperature-cooked veal, covered with a creamy tuna sauce and finished with capers. An Italian classic, served cold with our house focaccia.',
 
   // Bebidas — Coctelería (v8)
-  'Pomelo Neón':
+  'Pomelo':
     'Tequila, fresh lime, and grapefruit soda. Fresh, citrusy, and sparkling — to kick off the night.',
-  'Cinnamon Kiss':
+  'Cinnamon Roll':
     'Freshly brewed espresso, vodka, Mr. Black coffee liqueur, and Monin cinnamon roll syrup. Like your favorite pastry, but in a glass.',
-  'Burbuja Tropical':
+  'Margarita Spritz':
     'Tequila, lime, and cava, with Monin spicy mango or passion fruit syrup, your choice. A margarita with bubbles — fresh and fruity.',
-  'Piña Dorada':
+  'Ron Tropical':
     'Planteray Original Dark rum, Monin cinnamon syrup, lime, and pineapple soda. Tropical and spiced — tastes like vacation.',
 };

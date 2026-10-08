@@ -6,7 +6,6 @@ import carpicciosa from '../assets/carta/carpicciosa.jpg';
 import salamemio from '../assets/carta/salamemio.jpg';
 import focacciacarbonara from '../assets/carta/focacciacarbonara.jpg';
 import focacciavegetariana from '../assets/carta/focacciavegetariana.jpg';
-import carbopastica from '../assets/carta/carbopastica.jpg';
 import mrsbolognesa from '../assets/carta/mrsbolognesa.jpg';
 import allanorma from '../assets/carta/allanorma.jpg';
 import gnocchisima from '../assets/carta/gnocchisima.jpg';
@@ -165,7 +164,6 @@ export const PASTAS = [
     price: '11,90€',
     desc: 'Nunca con nata. Rigatoni con solo huevo, guanciale, parmigiano y la técnica que separa a los valientes de los demás. La auténtica o nada.',
     chips: [glutenFree('+1,50€')],
-    photo: carbopastica,
   },
   {
     name: 'La CarboTruffy',
@@ -182,7 +180,7 @@ export const PASTAS = [
   },
   {
     name: 'Tradizionale',
-    price: '11,90€',
+    price: '12,50€',
     desc: 'Ragú a la bolognesa de ternera, pomodoro, parmigiano y tagliatelle. Sin inventos. La bolognesa de toda la vida que no necesita explicación porque ya la conoces. O deberías.',
     chips: [glutenFree('+1,50€'), { icon: '🧀', text: '+2€ Stracciatella' }],
   },
@@ -305,6 +303,14 @@ export const BEBIDAS_SUAVES = [
   ['Sangría Rosso', '5,00€'],
 ];
 
+export const ICE_TEA = [
+  ['Té Negro Frutas del Bosque', '4,00€'],
+  ['Té Verde Guaraná', '4,00€'],
+  ['Rooibos Maracuyá', '4,00€'],
+  ['Té Negro Mora', '4,00€'],
+  ['Té Verde Piña Colada', '4,00€'],
+];
+
 export const CERVEZAS = [
   ['Doble de Mahou', '3,00€'],
   ['Clarita', '3,00€'],
@@ -336,22 +342,22 @@ export const SPRITZ = [
 
 export const COCTELERIA = [
   {
-    name: 'Pomelo Neón',
+    name: 'Pomelo',
     price: '11,00€',
     desc: 'Tequila, limón fresco y soda de pomelo. Fresco, cítrico y con chispa, para empezar la noche.',
   },
   {
-    name: 'Cinnamon Kiss',
+    name: 'Cinnamon Roll',
     price: '11,00€',
     desc: 'Expreso recién hecho, vodka, licor de café Mr. Black y sirope Monin de cinnamon roll. Como tu bollo favorito, pero en copa.',
   },
   {
-    name: 'Burbuja Tropical',
+    name: 'Margarita Spritz',
     price: '11,00€',
     desc: 'Tequila, limón y cava, con sirope Monin de mango picante o de maracuyá, a elegir. Una margarita con burbujas, fresca y frutal.',
   },
   {
-    name: 'Piña Dorada',
+    name: 'Ron Tropical',
     price: '11,00€',
     desc: 'Ron Planteray Original Dark, sirope Monin de canela, limón y soda de piña. Tropical y especiado, sabe a vacaciones.',
   },
@@ -368,6 +374,6 @@ export const WHEEL_DISHES = [
   { name: 'Gnocchisima', photo: gnocchisima },
   { name: 'Focaccia Carpicciosa', photo: carpicciosa },
   { name: 'Mrs Bolognesa', photo: mrsbolognesa },
-  { name: 'Carbopastica', photo: carbopastica },
+  { name: 'Croquetas de Rabo de Toro', photo: rabodetoro },
   { name: 'Tequeños', photo: tequenosqueso },
 ];

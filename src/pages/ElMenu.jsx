@@ -17,6 +17,7 @@ import {
   POSTRES,
   CAFES,
   BEBIDAS_SUAVES,
+  ICE_TEA,
   CERVEZAS,
   COPAS,
   SPRITZ,
@@ -101,6 +102,8 @@ export default function ElMenu() {
             <>
               <SubHeading>Sin / con alcohol suave</SubHeading>
               <SimpleList rows={BEBIDAS_SUAVES} />
+              <SubHeading>Ice Tea</SubHeading>
+              <SimpleList rows={ICE_TEA} />
               <SubHeading>Cerveza</SubHeading>
               <SimpleList rows={CERVEZAS} />
               <SubHeading>Copas</SubHeading>
