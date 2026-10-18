@@ -59,6 +59,8 @@ export default {
     "6 XL oxtail ravioli, slow-cooked until nothing's left but flavor, bathed in pesto rosso and lemon zest. All the character of the south.",
   'Saquitos de Lío':
     'Pouches filled with caramelized pear in a verrrry creamy sauce made with cream, mascarpone, and gorgonzola, topped with crushed walnuts. Perfect for those who dare.',
+  'Lasagna':
+    "We made it by hand, layer by layer. Slow-cooked Bolognese, creamy béchamel, gratinéed parmesan, and a touch of pesto at the end that ties it all together. Nonna doesn't improvise. Neither do we.",
   'Gnocchisima':
     'The best of both worlds: gnocchi with our slow-cooked bolognese alongside our carbonara, topped with parmigiano cheese and guanciale. A divine kind of crazy!!!',
   'La Frivoleza':

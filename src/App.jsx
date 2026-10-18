@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { TransitionProvider } from './context/TransitionContext';
 import Preloader from './components/Preloader';
 import Nav from './components/Nav';
@@ -24,6 +24,7 @@ export default function App() {
         <Route path="/el-menu" element={<PageShell><ElMenu /></PageShell>} />
         <Route path="/reservas" element={<PageShell><Reservas /></PageShell>} />
         <Route path="/a-domicilio" element={<PageShell><ADomicilio /></PageShell>} />
+        <Route path="/carta" element={<Navigate to="/el-menu" replace />} />
         <Route path="/aviso-legal" element={<PageShell><AvisoLegal /></PageShell>} />
         <Route path="*" element={<PageShell><NotFound /></PageShell>} />
       </Routes>

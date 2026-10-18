@@ -81,7 +81,7 @@ export const ENTRANTES = [
   },
   {
     name: 'Berenjenitas',
-    price: '6,50€',
+    price: '8,50€',
     desc: 'Berenjenas crujientes acompañadas de nuestra salsa pomodoro y queso parmigiano.',
   },
   {
@@ -161,7 +161,7 @@ export const PASTAS = [
   },
   {
     name: 'Carbopastica',
-    price: '11,90€',
+    price: '12,90€',
     desc: 'Nunca con nata. Rigatoni con solo huevo, guanciale, parmigiano y la técnica que separa a los valientes de los demás. La auténtica o nada.',
     chips: [glutenFree('+1,50€')],
   },
@@ -222,6 +222,11 @@ export const PASTAS = [
     chips: [glutenFree('+1,50€')],
     photo: frivoleza,
   },
+  {
+    name: 'Lasagna',
+    price: '13,00€',
+    desc: 'La hicimos a mano, capa por capa. Boloñesa lenta, bechamel cremosa, parmesano gratinado y un toque de pesto que llega al final y lo remata todo. La nonna no improvisa. Nosotros tampoco.',
+  },
 ];
 
 export const DESAYUNOS_HORARIO = 'Disponible de 9:00 a 12:00';
@@ -281,10 +286,10 @@ export const POSTRES = [
 ];
 
 export const CAFES = [
-  ['Café solo', '1,70€'],
-  ['Café americano', '1,70€'],
+  ['Café solo', '2,00€'],
+  ['Café americano', '2,00€'],
   ['Café con leche', '2,50€'],
-  ['Café cortado', '2,50€'],
+  ['Cortado', '2,20€'],
   ['Matcha coconut', '5,00€'],
   ['Caramel ice latte', '5,00€'],
   ['Matcha berry coconut', '5,50€'],
@@ -295,10 +300,10 @@ export const BEBIDAS_SUAVES = [
   ['Agua con gas San Pellegrino', '4,00€'],
   ['Refrescos', '3,50€'],
   ['Limonada Frozen (pulpa de fresa o maracuyá +0,50€)', '4,00€'],
-  ['Vermú', '4,00€'],
+  ['Vermú', '4,50€'],
   ['Copa de Vino (botella 14,00€)', '3,50€'],
   ['Copa de Lambrusco (botella 14,00€)', '3,50€'],
-  ['Tinto de Verano', '3,00€'],
+  ['Tinto de Verano', '3,50€'],
   ['Sangría Rubia', '5,00€'],
   ['Sangría Rosso', '5,00€'],
 ];
@@ -312,9 +317,8 @@ export const ICE_TEA = [
 ];
 
 export const CERVEZAS = [
-  ['Doble de Mahou', '3,00€'],
-  ['Clarita', '3,00€'],
-  ['Jarra de Cerveza', '5,00€'],
+  ['Doble de Mahou', '3,50€'],
+  ['Clarita', '3,50€'],
   ['Tercio Alhambra (cubetazo 15,00€)', '4,00€'],
   ['Tercio Peroni (cubetazo 15,00€)', '4,00€'],
   ['Tercio Moretti (cubetazo 15,00€)', '4,00€'],
