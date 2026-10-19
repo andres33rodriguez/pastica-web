@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import Scatter from '../components/Scatter';
+import { useLang } from '../i18n/LanguageContext';
 import PastaCurtain from '../components/menu/PastaCurtain';
 import CategoryTabs from '../components/menu/CategoryTabs';
 import DishCard from '../components/menu/DishCard';
 import SimpleList from '../components/menu/SimpleList';
 import MenuWheel from '../components/menu/MenuWheel';
 import patronAzul from '../assets/patrones/patron-azul-vertical.jpg';
-import menuDelDiaBadge from '../assets/platos/menudeldia.png';
+import menuDelDiaImage from '../assets/platos/menudeldia.png';
 import { rigatoni, albahaca, tornillo } from '../assets/figuritas';
 import {
   CATEGORIES,
@@ -22,7 +23,6 @@ import {
   COPAS,
   SPRITZ,
   COCTELERIA,
-  MENU_DEL_DIA_DETALLE,
   DESAYUNOS,
   DESAYUNOS_HORARIO,
 } from '../data/menu';
@@ -48,6 +48,7 @@ function SubHeading({ children }) {
 }
 
 export default function ElMenu() {
+  const { t } = useLang();
   const [curtainDone, setCurtainDone] = useState(false);
   const [active, setActive] = useState('entrantes');
 
@@ -118,19 +119,10 @@ export default function ElMenu() {
           {active === 'menu-del-dia' && (
             <div className="menu-del-dia-tab">
               <img
-                src={menuDelDiaBadge}
-                alt="Menú del día — 13,90€ — Alwaysssss al dente"
-                className="menu-del-dia-tab__badge"
+                src={menuDelDiaImage}
+                alt={t('menuDia.alt')}
+                className="menu-del-dia-tab__image"
               />
-              <dl className="menu-del-dia-tab__list">
-                {MENU_DEL_DIA_DETALLE.map((row) => (
-                  <div className="menu-del-dia-tab__row" key={row.label}>
-                    <dt>{row.label}</dt>
-                    <dd>{row.options}</dd>
-                  </div>
-                ))}
-              </dl>
-              <p className="menu-del-dia-tab__price">13,90€</p>
             </div>
           )}
 

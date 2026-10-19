@@ -16,7 +16,7 @@ const DECO = [
 const DISHES = [
   {
     name: 'Croquetas Rabo de Toro',
-    price: '8,90€',
+    price: '8,50€',
     glutenFree: false,
     photo: rabodetoro,
   },
@@ -28,13 +28,13 @@ const DISHES = [
   },
   {
     name: 'Focaccia Carpicciosa',
-    price: '11,00€',
+    price: '13,00€',
     glutenFree: false,
     photo: carpicciosa,
   },
   {
     name: 'Tequeños de Queso',
-    price: '7,90€',
+    price: '8,50€',
     glutenFree: false,
     photo: tequenosqueso,
   },

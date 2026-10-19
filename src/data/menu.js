@@ -52,7 +52,7 @@ export const ENTRANTES = [
   },
   {
     name: 'Croquetas de Rabo de Toro',
-    price: '8,90€',
+    price: '8,50€',
     desc: 'Esto no es una croqueta. Esto es un abrazo de abuela convertido en fritura. Guiso de toda la vida con forma de bocado perfecto.',
     photo: rabodetoro,
   },
@@ -63,7 +63,7 @@ export const ENTRANTES = [
   },
   {
     name: 'Tequeños de Queso',
-    price: '7,90€',
+    price: '8,50€',
     desc: 'Masa crujiente rellena de queso fundido. Aviso: generan dependencia.',
     photo: tequenosqueso,
   },
@@ -94,7 +94,7 @@ export const ENTRANTES = [
 export const FOCACCIAS = [
   {
     name: 'Carpicciosa',
-    price: '11,00€',
+    price: '13,00€',
     desc: 'Carpaccio de ternera, stracciatella, parmigiano, trufa y rúcula. Sí, en una focaccia. Sí, es tan buena como suena.',
     photo: carpicciosa,
   },
@@ -132,7 +132,7 @@ export const ENSALADAS = [
   },
   {
     name: 'Carpaccio de Gala',
-    price: '12,00€',
+    price: '14,00€',
     desc: 'Finas láminas de carpaccio sobre rúcula, con tomate, lascas de parmesano, aceite de oliva y reducción de balsámico. Se sirve con nuestra focaccia de la casa.',
   },
   {
@@ -365,13 +365,6 @@ export const COCTELERIA = [
     price: '11,00€',
     desc: 'Ron Planteray Original Dark, sirope Monin de canela, limón y soda de piña. Tropical y especiado, sabe a vacaciones.',
   },
-];
-
-export const MENU_DEL_DIA_DETALLE = [
-  { label: 'Entrante a elegir', options: 'Focaccia al ajo / Mini Ensalada de Stracciatella / Mini Berenjenitas' },
-  { label: 'Plato a elegir', options: 'Tradizionale / Carbonara / Pistachona / Focaccia a elegir' },
-  { label: 'Postre a elegir', options: 'Tiramisú / Cannoli / Café o infusión' },
-  { label: 'Bebida', options: 'Agua / Refrescos / Doble o Tinto de Verano' },
 ];
 
 export const WHEEL_DISHES = [

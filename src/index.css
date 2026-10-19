@@ -1136,47 +1136,18 @@ h1, h2, h3, h4 {
 /* ---- Menú del día tab ---- */
 .menu-del-dia-tab {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 24px;
+  justify-content: center;
   padding-bottom: 24px;
 }
 
-.menu-del-dia-tab__badge {
-  max-width: 280px;
+.menu-del-dia-tab__image {
+  display: block;
   width: 100%;
+  max-width: 420px;
+  height: auto;
   border-radius: 20px;
   border: 3px solid #1a1a1a;
   box-shadow: 6px 6px 0 var(--amarillo);
-}
-
-.menu-del-dia-tab__list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  max-width: 520px;
-  margin: 0;
-}
-
-.menu-del-dia-tab__row dt {
-  font-family: var(--font-title);
-  text-transform: uppercase;
-  color: var(--rojo);
-  font-size: 1.05rem;
-  margin-bottom: 2px;
-}
-
-.menu-del-dia-tab__row dd {
-  margin: 0;
-  color: var(--azul);
-}
-
-.menu-del-dia-tab__price {
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 2rem;
-  color: var(--azul);
 }
 
 /* ---- Pasta curtain (El Menú entrance) ---- */

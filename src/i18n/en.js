@@ -18,7 +18,7 @@ export default {
     cta: 'View the menu',
   },
   menuDia: {
-    alt: 'Daily menu — 13,90€ — Alwaysssss al dente',
+    alt: 'Pastica daily menu for 13,90€: your choice of first course, second course, drink and dessert, Monday to Friday from 1 to 5 PM. You choose, we cook. Always al dente.',
   },
   platos: {
     title: 'our signature dishes',

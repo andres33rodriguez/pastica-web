@@ -18,7 +18,7 @@ export default {
     cta: 'Ver la carta',
   },
   menuDia: {
-    alt: 'Menú del día — 13,90€ — Alwaysssss al dente',
+    alt: 'Menú del día de Pastica por 13,90€: primero, segundo, bebida y postre a elegir, de lunes a viernes de 13 a 17 h. Tú eliges, nosotros cocinamos. Siempre al dente.',
   },
   platos: {
     title: 'nuestros platos estrella',
