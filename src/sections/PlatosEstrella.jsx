@@ -16,7 +16,7 @@ const DECO = [
 const DISHES = [
   {
     name: 'Croquetas Rabo de Toro',
-    price: '8,50€',
+    price: '9,50€',
     glutenFree: false,
     photo: rabodetoro,
   },

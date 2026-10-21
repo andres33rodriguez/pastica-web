@@ -32,7 +32,7 @@ export const ENTRANTES = [
   },
   {
     name: 'Focaccia de la Casa',
-    price: '3,00€',
+    price: '3,25€',
     desc: 'Tiras de focaccia artesanal recién horneadas con aceite de oliva.',
   },
   {
@@ -47,12 +47,12 @@ export const ENTRANTES = [
   },
   {
     name: 'Croquetas Carbonara',
-    price: '7,90€',
+    price: '8,20€',
     desc: 'La croqueta que se cree italiana pero lleva toda la vida en tu corazón.',
   },
   {
     name: 'Croquetas de Rabo de Toro',
-    price: '8,50€',
+    price: '9,50€',
     desc: 'Esto no es una croqueta. Esto es un abrazo de abuela convertido en fritura. Guiso de toda la vida con forma de bocado perfecto.',
     photo: rabodetoro,
   },
@@ -69,7 +69,7 @@ export const ENTRANTES = [
   },
   {
     name: 'Tequeños de Pizza',
-    price: '7,90€',
+    price: '8,50€',
     desc: 'Tequeños versión pastica: con queso, pomodoro y el toque perfecto de hierbas italianas.',
     photo: tequenospizza,
   },
@@ -162,13 +162,13 @@ export const PASTAS = [
   {
     name: 'Carbopastica',
     price: '12,90€',
-    desc: 'Nunca con nata. Rigatoni con solo huevo, guanciale, parmigiano y la técnica que separa a los valientes de los demás. La auténtica o nada.',
+    desc: 'Nunca con nata. Espaguetis con solo huevo, guanciale, parmigiano y la técnica que separa a los valientes de los demás. La auténtica o nada.',
     chips: [glutenFree('+1,50€')],
   },
   {
     name: 'La CarboTruffy',
     price: '14,00€',
-    desc: 'Nuestra cremosa salsa carbonara servida con tagliatelle, con guanciale y queso parmigiano con un toque de trufa que le da todo el sabor y el aroma que merece.',
+    desc: 'Nuestra cremosa salsa carbonara servida con rigatoni, con guanciale y queso parmigiano con un toque de trufa que le da todo el sabor y el aroma que merece.',
     chips: [glutenFree('+1,50€')],
   },
   {
@@ -262,7 +262,7 @@ export const DESAYUNOS = [
 export const POSTRES = [
   {
     name: 'Tarta de Queso',
-    price: '7,50€',
+    price: '8,50€',
     desc: 'Horneada, con una cremosidad que no tiene explicación lógica acompañado de crema de cacao con avellanas. La favorita de la casa.',
     chips: [{ icon: '🌾', text: 'Opción sin gluten' }],
   },

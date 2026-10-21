@@ -44,9 +44,9 @@ export default {
   'Amatriccianisima 🌶':
     'Pomodoro sauce and guanciale, showered in parmigiano with just the right kick of spice, served over rigatoni and topped with stracciatella and pepper.',
   'Carbopastica':
-    'Never with cream. Rigatoni with just egg, guanciale, parmigiano, and the technique that separates the brave from the rest. The real deal or nothing.',
+    'Never with cream. Spaghetti with just egg, guanciale, parmigiano, and the technique that separates the brave from the rest. The real deal or nothing.',
   'La CarboTruffy':
-    'Our creamy carbonara sauce served with tagliatelle, guanciale, and parmigiano cheese, with a touch of truffle that gives it all the flavor and aroma it deserves.',
+    'Our creamy carbonara sauce served with rigatoni, guanciale, and parmigiano cheese, with a touch of truffle that gives it all the flavor and aroma it deserves.',
   'Mrs Bolognesa':
     "The lady of the menu. A slow-simmered beef bolognese ragù, showered in parmigiano and served with bolognese ravioli. Because there's never enough bolognese.",
   'Tradizionale':
