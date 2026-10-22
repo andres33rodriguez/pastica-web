@@ -1,6 +1,6 @@
 import Scatter from '../components/Scatter';
 import { useLang } from '../i18n/LanguageContext';
-import menuDelDia from '../assets/platos/menudeldia.png';
+import menuDelDia from '../assets/platos/menudeldia.jpg';
 import { macarron, albahaca } from '../assets/figuritas';
 
 const DECO = [
@@ -10,7 +10,7 @@ const DECO = [
 
 /**
  * Single hero image with the daily menu — already fully designed
- * (price + copy baked in). To update: replace src/assets/platos/menudeldia.png
+ * (price + copy baked in). To update: replace src/assets/platos/menudeldia.jpg
  * with the new file, same name.
  */
 export default function MenuDelDia() {

@@ -89,6 +89,11 @@ export const ENTRANTES = [
     price: '16,00€',
     desc: 'Una burrata XL rodeada de sus mejores amigos: mortadela, salame, jamón y focaccia perfecta para compartir. Con ensalada de rúcula y tomate cherry porque aquí también fingimos que comemos sano.',
   },
+  {
+    name: 'Gratinazzo',
+    price: '6,00€',
+    desc: 'Gnocchi de patata, salsa pomodoro, lascas de Grana Padano y albahaca fresca. Gratinado en el horno hasta que cruje.',
+  },
 ];
 
 export const FOCACCIAS = [
@@ -153,6 +158,11 @@ export const ENSALADAS = [
 ];
 
 export const PASTAS = [
+  {
+    name: 'La Margherita',
+    price: '9,90€',
+    desc: 'Spaghetti, tomate de la nonna, stracciatella y albahaca fresca. La pizza quería ser pasta.',
+  },
   {
     name: 'Amatriccianisima 🌶',
     price: '12,50€',

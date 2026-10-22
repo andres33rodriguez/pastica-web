@@ -7,7 +7,7 @@ import DishCard from '../components/menu/DishCard';
 import SimpleList from '../components/menu/SimpleList';
 import MenuWheel from '../components/menu/MenuWheel';
 import patronAzul from '../assets/patrones/patron-azul-vertical.jpg';
-import menuDelDiaImage from '../assets/platos/menudeldia.png';
+import menuDelDiaImage from '../assets/platos/menudeldia.jpg';
 import { rigatoni, albahaca, tornillo } from '../assets/figuritas';
 import {
   CATEGORIES,

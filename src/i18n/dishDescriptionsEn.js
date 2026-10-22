@@ -17,6 +17,8 @@ export default {
     'The pastica take on tequeños: with cheese, pomodoro, and the perfect touch of Italian herbs.',
   'Saquitos Croccante':
     'Fried pear pouches with our creamy gorgonzola sauce, finished with a touch of honey and walnuts. A true explosion of flavor.',
+  'Gratinazzo':
+    "Potato gnocchi, pomodoro sauce, Grana Padano shavings and fresh basil. Baked in the oven until it's golden and crunchy.",
   'Berenjenitas':
     'Crispy eggplant served with our pomodoro sauce and parmigiano cheese.',
   'Burrata & Friends':
@@ -43,6 +45,8 @@ export default {
   // Pastas
   'Amatriccianisima 🌶':
     'Pomodoro sauce and guanciale, showered in parmigiano with just the right kick of spice, served over rigatoni and topped with stracciatella and pepper.',
+  'La Margherita':
+    "Spaghetti, nonna's tomato sauce, stracciatella and fresh basil. The pizza wanted to be pasta.",
   'Carbopastica':
     'Never with cream. Spaghetti with just egg, guanciale, parmigiano, and the technique that separates the brave from the rest. The real deal or nothing.',
   'La CarboTruffy':
