@@ -4,7 +4,7 @@ import patronAmarilloH from '../assets/patrones/patron-amarillo-horizontal.jpg';
 import rabodetoro from '../assets/platos/rabodetoro.jpg';
 import carpicciosa from '../assets/carta/carpicciosa.jpg';
 import gnocchisima from '../assets/carta/gnocchisima.jpg';
-import tequenosqueso from '../assets/carta/tequenosqueso.jpg';
+import pistachona from '../assets/carta/pistachona.jpg';
 import { albahaca, oreccete, tornillo2 } from '../assets/figuritas';
 
 const DECO = [
@@ -33,10 +33,10 @@ const DISHES = [
     photo: carpicciosa,
   },
   {
-    name: 'Tequeños de Queso',
-    price: '8,50€',
-    glutenFree: false,
-    photo: tequenosqueso,
+    name: 'La Pistachona',
+    price: '13,90€',
+    glutenFree: true,
+    photo: pistachona,
   },
 ];
 

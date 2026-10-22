@@ -10,6 +10,12 @@ import mrsbolognesa from '../assets/carta/mrsbolognesa.jpg';
 import allanorma from '../assets/carta/allanorma.jpg';
 import gnocchisima from '../assets/carta/gnocchisima.jpg';
 import frivoleza from '../assets/carta/frivoleza.jpg';
+import tradizionale from '../assets/carta/tradizionale.jpg';
+import amatripastica from '../assets/carta/amatripastica.jpg';
+import cannoli from '../assets/carta/cannoli.jpg';
+import ladeltoro from '../assets/carta/la-del-toro.jpg';
+import mortadelisima from '../assets/carta/mortadelisima.jpg';
+import pistachona from '../assets/carta/pistachona.jpg';
 
 // Chip icon shorthand: { icon, text }
 const glutenFree = (price) => ({ icon: '🌾', text: `Sin gluten ${price}` });
@@ -119,6 +125,7 @@ export const FOCACCIAS = [
     name: 'Mortadelísima',
     price: '11,00€',
     desc: 'Mortadela al tartufo, stracciatella, pistacchio, pesto y rúcula. Una focaccia con complejo de plato estrella de restaurante.',
+    photo: mortadelisima,
   },
   {
     name: 'Vegetariana',
@@ -162,12 +169,14 @@ export const PASTAS = [
     name: 'La Margherita',
     price: '9,90€',
     desc: 'Spaghetti, tomate de la nonna, stracciatella y albahaca fresca. La pizza quería ser pasta.',
+    chips: [glutenFree('+1,50€')],
   },
   {
     name: 'Amatriccianisima 🌶',
     price: '12,50€',
     desc: 'Salsa pomodoro y guanciale, con una lluvia de parmigiano y el toque de picante perfecto servido sobre rigatoni coronado con stracciatella y pimienta.',
     chips: [glutenFree('+1,50€')],
+    photo: amatripastica,
   },
   {
     name: 'Carbopastica',
@@ -193,6 +202,7 @@ export const PASTAS = [
     price: '12,50€',
     desc: 'Ragú a la bolognesa de ternera, pomodoro, parmigiano y tagliatelle. Sin inventos. La bolognesa de toda la vida que no necesita explicación porque ya la conoces. O deberías.',
     chips: [glutenFree('+1,50€'), { icon: '🧀', text: '+2€ Stracciatella' }],
+    photo: tradizionale,
   },
   {
     name: 'Alla Norma',
@@ -205,12 +215,14 @@ export const PASTAS = [
     price: '12,50€',
     desc: 'Busiate con pesto, tomates dulces, ralladura de limón, pistacchio triturado y coronado con una stracciatella. El pesto de siempre con un frescor que lo cambia todo.',
     chips: [glutenFree('+1,50€')],
+    photo: pistachona,
   },
   {
     name: 'La del Toro',
     price: '14,00€',
     desc: '6 ravioli de rabo de toro XL guisado a fuego lento hasta que no queda más que sabor, bañado en pesto rosso y ralladura de limón. Todo el carácter del sur.',
     chips: [glutenFree('+2,50€ (con ravioli de picota y espinacas)')],
+    photo: ladeltoro,
   },
   {
     name: 'Saquitos de Lío',
@@ -280,6 +292,7 @@ export const POSTRES = [
     name: 'Cannoli Amore',
     price: '6,90€',
     desc: '3 cannoli con nuestra crema de ricotta, pistaccio y mucho amore.',
+    photo: cannoli,
   },
   {
     name: 'Tiramisú clásico de toda la vida',
@@ -382,5 +395,5 @@ export const WHEEL_DISHES = [
   { name: 'Focaccia Carpicciosa', photo: carpicciosa },
   { name: 'Mrs Bolognesa', photo: mrsbolognesa },
   { name: 'Croquetas de Rabo de Toro', photo: rabodetoro },
-  { name: 'Tequeños', photo: tequenosqueso },
+  { name: 'La Pistachona', photo: pistachona },
 ];
