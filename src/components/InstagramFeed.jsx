@@ -1,15 +1,15 @@
-import platos from '../assets/instagram/platos.jpg';
+import mortadelaAna from '../assets/instagram/mortadela-ana.jpg';
 import pareja from '../assets/instagram/pareja.jpg';
 import mesa from '../assets/instagram/mesa.jpg';
 import pasta from '../assets/instagram/pasta.jpg';
-import comiendo from '../assets/instagram/comiendo.jpg';
-import ana2 from '../assets/instagram/ana2.jpg';
+import anaCanolli from '../assets/instagram/ana-canolli.jpg';
+import fotoTradizionale from '../assets/instagram/foto-tradizionale.jpg';
 import { manoCapisci } from '../assets/mano-capisci';
 import { useLang } from '../i18n/LanguageContext';
 
 const IG_URL = 'https://www.instagram.com/pastica.es/';
 
-const PHOTOS = [platos, pareja, mesa, pasta, comiendo, ana2];
+const PHOTOS = [mortadelaAna, pareja, mesa, pasta, anaCanolli, fotoTradizionale];
 
 /**
  * Curated-by-hand IG feed (no API/token). To swap a photo later, replace the
