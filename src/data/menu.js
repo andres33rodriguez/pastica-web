@@ -296,7 +296,7 @@ export const POSTRES = [
   },
   {
     name: 'Tiramisú clásico de toda la vida',
-    price: '6,00€',
+    price: '6,50€',
     desc: 'Café, mascarpone y bizcocho empapado hasta el alma de café con cacao por encima.',
     chips: [{ icon: '🌾', text: 'Opción sin gluten' }],
   },
