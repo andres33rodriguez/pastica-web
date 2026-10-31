@@ -302,7 +302,7 @@ export const POSTRES = [
   },
   {
     name: 'Tiramisú pistacchio lover',
-    price: '6,90€',
+    price: '8,00€',
     desc: 'El tiramisú fue a terapia, se reinventó y volvió verde.',
     chips: [{ icon: '🌾', text: 'Opción sin gluten' }],
   },
