@@ -340,9 +340,9 @@ export const ICE_TEA = [
 ];
 
 export const CERVEZAS = [
-  ['Doble de Mahou', '3,50€'],
+  ['Doble de Águila', '3,50€'],
+  ['Pinta de Águila (500ml)', '5,00€'],
   ['Clarita', '3,50€'],
-  ['Tercio Alhambra (cubetazo 15,00€)', '4,00€'],
   ['Tercio Peroni (cubetazo 15,00€)', '4,00€'],
   ['Tercio Moretti (cubetazo 15,00€)', '4,00€'],
   ['Tercio Mahou (sin gluten)', '5,00€'],
@@ -360,7 +360,6 @@ export const SPRITZ = [
   ['Aperol Frozen', '5,00€'],
   ['Limoncello Spritz', '7,00€'],
   ['Aperol Spritz', '7,00€'],
-  ['Crodino Spritz', '4,00€'],
   ['Sarti Spritz', '7,00€'],
   ['Mondoro Hugo Spritz', '7,00€'],
   ['Campari Spritz', '8,00€'],

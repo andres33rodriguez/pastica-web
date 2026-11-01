@@ -75,6 +75,24 @@ export default {
   },
   menu: {
     comingSoon: 'Próximamente',
+    tabs: {
+      entrantes: 'Entrantes',
+      'alguito-mas': 'Alguito más',
+      pastas: 'Pastas',
+      postres: 'Postres',
+      bebidas: 'Bebidas',
+      'menu-del-dia': 'Menú del día',
+      desayunos: 'Desayunos',
+    },
+    groups: {
+      soft: 'Sin / con alcohol suave',
+      iceTea: 'Ice Tea',
+      beer: 'Cerveza',
+      mixed: 'Copas',
+      spritz: 'Spritz',
+      cocktails: 'Coctelería',
+      coffee: 'Cafés e infusiones',
+    },
   },
   curtain: {
     enter: 'Pulsa para entrar',

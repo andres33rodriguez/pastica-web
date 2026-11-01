@@ -1,4 +1,7 @@
+import { useLang } from '../../i18n/LanguageContext';
+
 export default function CategoryTabs({ categories, active, onChange }) {
+  const { t } = useLang();
   return (
     <div className="menu-tabs" role="tablist" aria-label="Categorías de la carta">
       {categories.map((cat) => (
@@ -10,7 +13,7 @@ export default function CategoryTabs({ categories, active, onChange }) {
           className={`menu-tabs__btn ${active === cat.id ? 'is-active' : ''}`}
           onClick={() => onChange(cat.id)}
         >
-          {cat.label}
+          {t(`menu.tabs.${cat.id}`)}
         </button>
       ))}
     </div>

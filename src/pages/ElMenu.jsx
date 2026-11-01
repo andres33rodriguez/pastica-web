@@ -94,24 +94,24 @@ export default function ElMenu() {
           {active === 'postres' && (
             <>
               <DishGrid items={POSTRES} />
-              <SubHeading>Cafés e infusiones</SubHeading>
+              <SubHeading>{t('menu.groups.coffee')}</SubHeading>
               <SimpleList rows={CAFES} />
             </>
           )}
 
           {active === 'bebidas' && (
             <>
-              <SubHeading>Sin / con alcohol suave</SubHeading>
+              <SubHeading>{t('menu.groups.soft')}</SubHeading>
               <SimpleList rows={BEBIDAS_SUAVES} />
-              <SubHeading>Ice Tea</SubHeading>
+              <SubHeading>{t('menu.groups.iceTea')}</SubHeading>
               <SimpleList rows={ICE_TEA} />
-              <SubHeading>Cerveza</SubHeading>
+              <SubHeading>{t('menu.groups.beer')}</SubHeading>
               <SimpleList rows={CERVEZAS} />
-              <SubHeading>Copas</SubHeading>
+              <SubHeading>{t('menu.groups.mixed')}</SubHeading>
               <SimpleList rows={COPAS} />
-              <SubHeading>Spritz</SubHeading>
+              <SubHeading>{t('menu.groups.spritz')}</SubHeading>
               <SimpleList rows={SPRITZ} />
-              <SubHeading>Coctelería</SubHeading>
+              <SubHeading>{t('menu.groups.cocktails')}</SubHeading>
               <DishGrid items={COCTELERIA} />
             </>
           )}

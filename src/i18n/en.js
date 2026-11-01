@@ -75,6 +75,24 @@ export default {
   },
   menu: {
     comingSoon: 'Coming soon',
+    tabs: {
+      entrantes: 'Starters',
+      'alguito-mas': 'Little extras',
+      pastas: 'Pasta',
+      postres: 'Desserts',
+      bebidas: 'Drinks',
+      'menu-del-dia': 'Daily menu',
+      desayunos: 'Breakfast',
+    },
+    groups: {
+      soft: 'Alcohol-free / light alcohol',
+      iceTea: 'Iced Tea',
+      beer: 'Beer',
+      mixed: 'Mixed Drinks',
+      spritz: 'Spritz',
+      cocktails: 'Cocktails',
+      coffee: 'Coffee & Infusions',
+    },
   },
   curtain: {
     enter: 'Press to enter',
