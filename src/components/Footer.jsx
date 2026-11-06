@@ -1,8 +1,9 @@
 import TLink from './TLink';
 import InstagramFeed from './InstagramFeed';
 import Scatter from './Scatter';
+import Pic from './Pic';
 import { useLang } from '../i18n/LanguageContext';
-import logoAzul from '../assets/logos/logo-azul.png';
+import logoAzul from '../assets/logos/logo-azul.png?logo';
 import { rigatoni, plumita } from '../assets/figuritas';
 
 const DECO = [
@@ -18,7 +19,7 @@ export default function Footer() {
     <footer className="footer">
       <Scatter items={DECO} />
       <div className="container footer__inner">
-        <img src={logoAzul} alt="Pastica" className="footer__logo" />
+        <Pic pic={logoAzul} alt="Pastica" className="footer__logo" />
 
         <InstagramFeed compact />
 

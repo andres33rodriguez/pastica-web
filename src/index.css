@@ -88,8 +88,10 @@ body {
 
 img {
   max-width: 100%;
+  height: auto; /* images carry width/height attributes; keep their ratio when only one side is styled */
   display: block;
 }
+
 
 a {
   color: inherit;
@@ -265,6 +267,11 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   transition: opacity 0.5s ease;
+}
+
+/* Set by an inline script in index.html for visitors who already saw it this session. */
+.no-preloader .preloader {
+  display: none;
 }
 
 .preloader.is-hidden {
@@ -651,6 +658,8 @@ h1, h2, h3, h4 {
   z-index: 2;
   display: flex;
   justify-content: center;
+  /* Poster (420px + container padding) — explicit so the box doesn't depend on the image having loaded. */
+  width: min(100%, 468px);
 }
 
 .menu-dia__image {

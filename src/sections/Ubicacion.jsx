@@ -1,6 +1,6 @@
 import Scatter from '../components/Scatter';
 import { useLang } from '../i18n/LanguageContext';
-import patronAzul from '../assets/patrones/patron-azul-vertical.jpg';
+import patronAzul from '../assets/patrones/patron-azul-vertical.jpg?bg';
 import { tomate, plumita } from '../assets/figuritas';
 
 const DECO = [

@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Pic from '../components/Pic';
 import { manoCapisci } from '../assets/mano-capisci';
 
 const ROUTE_COLOR = {
@@ -45,7 +46,7 @@ export function TransitionProvider({ children }) {
     <TransitionContext.Provider value={value}>
       {children}
       <div className={`route-overlay ${active ? 'is-active' : ''}`} aria-hidden="true">
-        <img src={manoCapisci[color]} alt="" className="route-overlay__icon" />
+        <Pic pic={manoCapisci[color]} className="route-overlay__icon" loading="eager" />
       </div>
     </TransitionContext.Provider>
   );

@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import Scatter from '../components/Scatter';
+import Pic from '../components/Pic';
 import { useLang } from '../i18n/LanguageContext';
 import PastaCurtain from '../components/menu/PastaCurtain';
 import CategoryTabs from '../components/menu/CategoryTabs';
 import DishCard from '../components/menu/DishCard';
 import SimpleList from '../components/menu/SimpleList';
 import MenuWheel from '../components/menu/MenuWheel';
-import patronAzul from '../assets/patrones/patron-azul-vertical.jpg';
-import menuDelDiaImage from '../assets/platos/menudeldia.jpg';
+import patronAzul from '../assets/patrones/patron-azul-vertical.jpg?bg';
+import menuDelDiaImage from '../assets/platos/menudeldia.jpg?poster';
 import { rigatoni, albahaca, tornillo } from '../assets/figuritas';
 import {
   CATEGORIES,
@@ -60,7 +61,7 @@ export default function ElMenu() {
         className="el-menu-hero section-pattern"
         style={{ backgroundImage: `url(${patronAzul})` }}
       >
-        <Scatter items={DECO} />
+        <Scatter items={DECO} eager />
         <div className="container el-menu-hero__inner">
           <h1 className="el-menu-hero__title">la carta</h1>
           <p className="el-menu-hero__note">
@@ -77,6 +78,8 @@ export default function ElMenu() {
       </div>
 
       <section className="menu-panel">
+        {/* Heading for the active tab so dish and group titles sit under an h2 (hidden: no visual change). */}
+        <h2 className="sr-only">{t(`menu.tabs.${active}`)}</h2>
         <div className="container">
           {active === 'entrantes' && <DishGrid items={ENTRANTES} />}
 
@@ -118,10 +121,11 @@ export default function ElMenu() {
 
           {active === 'menu-del-dia' && (
             <div className="menu-del-dia-tab">
-              <img
-                src={menuDelDiaImage}
+              <Pic
+                pic={menuDelDiaImage}
                 alt={t('menuDia.alt')}
                 className="menu-del-dia-tab__image"
+                sizes="(min-width: 480px) 420px, 92vw"
               />
             </div>
           )}

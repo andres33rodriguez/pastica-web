@@ -1,6 +1,7 @@
 import Scatter from '../components/Scatter';
+import Pic from '../components/Pic';
 import { useLang } from '../i18n/LanguageContext';
-import menuDelDia from '../assets/platos/menudeldia.jpg';
+import menuDelDia from '../assets/platos/menudeldia.jpg?poster';
 import { macarron, albahaca } from '../assets/figuritas';
 
 const DECO = [
@@ -19,10 +20,11 @@ export default function MenuDelDia() {
     <section className="menu-dia">
       <Scatter items={DECO} />
       <div className="container menu-dia__inner">
-        <img
-          src={menuDelDia}
+        <Pic
+          pic={menuDelDia}
           alt={t('menuDia.alt')}
           className="menu-dia__image"
+          sizes="(min-width: 480px) 420px, 92vw"
         />
       </div>
     </section>

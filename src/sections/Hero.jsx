@@ -1,7 +1,7 @@
 import TLink from '../components/TLink';
 import { useLang } from '../i18n/LanguageContext';
 import Scatter from '../components/Scatter';
-import patronAmarillo from '../assets/patrones/patron-amarillo-vertical.jpg';
+import patronAmarillo from '../assets/patrones/patron-amarillo-vertical.jpg?bg';
 import { tomate, mariposa, plumita, rigatoni } from '../assets/figuritas';
 
 const DECO = [
@@ -18,7 +18,7 @@ export default function Hero() {
       className="hero section-pattern"
       style={{ backgroundImage: `url(${patronAmarillo})` }}
     >
-      <Scatter items={DECO} />
+      <Scatter items={DECO} eager />
       <div className="container hero__inner">
         <p className="hero__kicker font-script">{t('hero.kicker')}</p>
         <h1 className="hero__title">{t('hero.title')}</h1>

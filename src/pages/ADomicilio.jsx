@@ -1,7 +1,8 @@
 import Scatter from '../components/Scatter';
+import Pic from '../components/Pic';
 import { useLang } from '../i18n/LanguageContext';
-import glovoLogo from '../assets/delivery/glovo.png';
-import uberEatsLogo from '../assets/delivery/ubereats.png';
+import glovoLogo from '../assets/delivery/glovo.png?partner';
+import uberEatsLogo from '../assets/delivery/ubereats.png?partner';
 import { spaguetti, tomate, macarron } from '../assets/figuritas';
 
 const GLOVO_URL = 'https://glovoapp.com/es/es/madrid/stores/pastica-madrid';
@@ -17,7 +18,7 @@ export default function ADomicilio() {
   const { t } = useLang();
   return (
     <section className="a-domicilio">
-      <Scatter items={DECO} />
+      <Scatter items={DECO} eager />
       <div className="container a-domicilio__inner">
         <p className="eyebrow">{t('domicilio.eyebrow')}</p>
         <h1 className="a-domicilio__title">{t('domicilio.title')}</h1>
@@ -30,7 +31,7 @@ export default function ADomicilio() {
             rel="noopener noreferrer"
             className="delivery-btn delivery-btn--glovo"
           >
-            <img src={glovoLogo} alt={t('domicilio.glovoAlt')} />
+            <Pic pic={glovoLogo} alt={t('domicilio.glovoAlt')} loading="eager" />
           </a>
           <a
             href={UBEREATS_URL}
@@ -38,7 +39,7 @@ export default function ADomicilio() {
             rel="noopener noreferrer"
             className="delivery-btn delivery-btn--ubereats"
           >
-            <img src={uberEatsLogo} alt={t('domicilio.uberAlt')} />
+            <Pic pic={uberEatsLogo} alt={t('domicilio.uberAlt')} loading="eager" />
           </a>
         </div>
       </div>

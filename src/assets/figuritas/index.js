@@ -1,14 +1,14 @@
-import albahaca from './albahaca.png';
-import macarron from './macarron.png';
-import mariposa from './mariposa.png';
-import oreccete from './oreccete.png';
-import plumita from './plumita.png';
-import rigatoni from './rigatoni.png';
-import spaguetti from './spaguetti.png';
-import tomate from './tomate.png';
-import tornillo from './tornillo.png';
-import tornillo2 from './tornillo2.png';
-import tornillo3 from './tornillo3.png';
+import albahaca from './albahaca.png?deco';
+import macarron from './macarron.png?deco';
+import mariposa from './mariposa.png?deco';
+import oreccete from './oreccete.png?deco';
+import plumita from './plumita.png?deco';
+import rigatoni from './rigatoni.png?deco';
+import spaguetti from './spaguetti.png?deco';
+import tomate from './tomate.png?deco';
+import tornillo from './tornillo.png?deco';
+import tornillo2 from './tornillo2.png?deco';
+import tornillo3 from './tornillo3.png?deco';
 
 export {
   albahaca,

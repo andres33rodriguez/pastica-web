@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import TLink from './TLink';
 import LangSwitch from './LangSwitch';
+import Pic from './Pic';
 import { useLang } from '../i18n/LanguageContext';
-import logoAmarillo from '../assets/logos/logo-amarillo.png';
+import logoAmarillo from '../assets/logos/logo-amarillo.png?logo';
 
 const LINKS = [
   { to: '/', key: 'nav.home' },
@@ -30,7 +31,7 @@ export default function Nav() {
     <header className="nav">
       <div className="nav__inner container">
         <TLink to="/" className="nav__brand" aria-label={t('nav.homeAria')}>
-          <img src={logoAmarillo} alt="Pastica" className="nav__brand-wordmark" />
+          <Pic pic={logoAmarillo} alt="Pastica" className="nav__brand-wordmark" loading="eager" />
         </TLink>
 
         <nav className="nav__links" aria-label={t('nav.main')}>

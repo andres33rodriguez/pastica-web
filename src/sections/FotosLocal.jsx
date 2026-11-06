@@ -1,10 +1,11 @@
 import Scatter from '../components/Scatter';
+import Pic from '../components/Pic';
 import { useLang } from '../i18n/LanguageContext';
-import patronRosaAmarillo from '../assets/patrones/patron-rosa-amarillo-vertical.jpg';
+import patronRosaAmarillo from '../assets/patrones/patron-rosa-amarillo-vertical.jpg?bg';
 import { spaguetti, tornillo3, mariposa } from '../assets/figuritas';
-import entrada from '../assets/local/entrada.jpg';
-import barra from '../assets/local/barra.jpg';
-import salon from '../assets/local/salon.jpg';
+import entrada from '../assets/local/entrada.jpg?local';
+import barra from '../assets/local/barra.jpg?local';
+import salon from '../assets/local/salon.jpg?local';
 
 const DECO = [
   { src: spaguetti, top: '3%', left: '2%', size: 256, rotate: -16 },
@@ -31,7 +32,11 @@ export default function FotosLocal() {
         <div className="local__grid">
           {PHOTOS.map((p) => (
             <div className="local__photo" key={p.key}>
-              <img src={p.src} alt={t(`local.${p.key}`)} />
+              <Pic
+                pic={p.src}
+                alt={t(`local.${p.key}`)}
+                sizes="(min-width: 781px) 31vw, 92vw"
+              />
             </div>
           ))}
         </div>

@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import Pic from '../Pic';
 import { WHEEL_DISHES } from '../../data/menu';
 
 const SLICE = 360 / WHEEL_DISHES.length;
@@ -55,9 +56,10 @@ export default function MenuWheel() {
                   className="menu-wheel__slot"
                   style={{ transform: `rotate(${angle}deg) translateY(calc(-1 * var(--wheel-radius)))` }}
                 >
-                  <img
-                    src={dish.photo}
+                  <Pic
+                    pic={dish.photo}
                     alt={dish.name}
+                    sizes="190px"
                     style={{ transform: `translate(-50%, -50%) rotate(${-angle - rotation}deg)` }}
                     className="menu-wheel__photo"
                   />

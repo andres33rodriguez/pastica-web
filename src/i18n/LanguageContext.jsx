@@ -21,7 +21,14 @@ function resolve(dict, key) {
 }
 
 export function LanguageProvider({ children }) {
-  const [lang, setLangState] = useState(readStoredLang);
+  // The pre-rendered HTML is always Spanish, so the first (hydration) render
+  // must be Spanish too; a stored English choice is applied right after.
+  const [lang, setLangState] = useState('es');
+
+  useEffect(() => {
+    const stored = readStoredLang();
+    if (stored !== 'es') setLangState(stored);
+  }, []);
 
   useEffect(() => {
     document.documentElement.lang = lang;

@@ -2,7 +2,7 @@ import Scatter from '../components/Scatter';
 import { useLang } from '../i18n/LanguageContext';
 import WhatsAppButton from '../components/WhatsAppButton';
 import TLink from '../components/TLink';
-import patronAmarillo from '../assets/patrones/patron-amarillo-vertical.jpg';
+import patronAmarillo from '../assets/patrones/patron-amarillo-vertical.jpg?bg';
 import { macarron, mariposa } from '../assets/figuritas';
 
 const DECO = [

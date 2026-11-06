@@ -1,4 +1,5 @@
 import Chip from './Chip';
+import Pic from '../Pic';
 import { useLang } from '../../i18n/LanguageContext';
 import descriptionsEn from '../../i18n/dishDescriptionsEn';
 
@@ -9,7 +10,11 @@ export default function DishCard({ dish }) {
     <article className={`menu-dish ${dish.photo ? 'menu-dish--photo' : ''}`}>
       {dish.photo && (
         <div className="menu-dish__photo">
-          <img src={dish.photo} alt={dish.name} loading="lazy" />
+          <Pic
+            pic={dish.photo}
+            alt={dish.name}
+            sizes="(min-width: 1000px) 340px, (min-width: 700px) 46vw, 92vw"
+          />
         </div>
       )}
       <div className="menu-dish__body">

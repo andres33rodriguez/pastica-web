@@ -1,10 +1,11 @@
 import Scatter from '../components/Scatter';
+import Pic from '../components/Pic';
 import { useLang } from '../i18n/LanguageContext';
-import patronAmarilloH from '../assets/patrones/patron-amarillo-horizontal.jpg';
-import rabodetoro from '../assets/platos/rabodetoro.jpg';
-import carpicciosa from '../assets/carta/carpicciosa.jpg';
-import gnocchisima from '../assets/carta/gnocchisima.jpg';
-import pistachona from '../assets/carta/pistachona.jpg';
+import patronAmarilloH from '../assets/patrones/patron-amarillo-horizontal.jpg?bg';
+import rabodetoro from '../assets/platos/rabodetoro.jpg?photo';
+import carpicciosa from '../assets/carta/carpicciosa.jpg?photo';
+import gnocchisima from '../assets/carta/gnocchisima.jpg?photo';
+import pistachona from '../assets/carta/pistachona.jpg?photo';
 import { albahaca, oreccete, tornillo2 } from '../assets/figuritas';
 
 const DECO = [
@@ -55,7 +56,11 @@ export default function PlatosEstrella() {
           {DISHES.map((dish) => (
             <article className="dish-card" key={dish.name}>
               <div className="dish-card__photo">
-                <img src={dish.photo} alt={dish.name} />
+                <Pic
+                  pic={dish.photo}
+                  alt={dish.name}
+                  sizes="(min-width: 1000px) 250px, (min-width: 700px) 22vw, 42vw"
+                />
               </div>
               <div className="dish-card__info">
                 <h3>{dish.name}</h3>

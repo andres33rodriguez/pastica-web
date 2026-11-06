@@ -1,9 +1,10 @@
-import mortadelaAna from '../assets/instagram/mortadela-ana.jpg';
-import pareja from '../assets/instagram/pareja.jpg';
-import mesa from '../assets/instagram/mesa.jpg';
-import pasta from '../assets/instagram/pasta.jpg';
-import anaCanolli from '../assets/instagram/ana-canolli.jpg';
-import fotoTradizionale from '../assets/instagram/foto-tradizionale.jpg';
+import mortadelaAna from '../assets/instagram/mortadela-ana.jpg?photo';
+import pareja from '../assets/instagram/pareja.jpg?photo';
+import mesa from '../assets/instagram/mesa.jpg?photo';
+import pasta from '../assets/instagram/pasta.jpg?photo';
+import anaCanolli from '../assets/instagram/ana-canolli.jpg?photo';
+import fotoTradizionale from '../assets/instagram/foto-tradizionale.jpg?photo';
+import Pic from './Pic';
 import { manoCapisci } from '../assets/mano-capisci';
 import { useLang } from '../i18n/LanguageContext';
 
@@ -22,7 +23,7 @@ export default function InstagramFeed({ compact = false }) {
       {!compact && (
         <div className="ig-feed__header">
           <div className="ig-feed__who">
-            <img src={manoCapisci.rojo} alt=""className="ig-feed__avatar-deco" />
+            <Pic pic={manoCapisci.rojo} className="ig-feed__avatar-deco" />
             <div>
               <p className="ig-feed__handle">@pastica.es</p>
               <p className="ig-feed__followers">{t('instagram.followers')}</p>
@@ -49,7 +50,11 @@ export default function InstagramFeed({ compact = false }) {
             className="ig-tile"
             aria-label={t('instagram.postAria')}
           >
-            <img src={photo} alt="" className="ig-tile__photo" loading="lazy" />
+            <Pic
+              pic={photo}
+              sizes={compact ? '100px' : '(min-width: 700px) 361px, 46vw'}
+              className="ig-tile__photo"
+            />
           </a>
         ))}
       </div>
