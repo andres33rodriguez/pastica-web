@@ -10,7 +10,7 @@
 import { access, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { ROUTES, getSeo, renderHeadTags } from '../src/seo.js'
+import { ROUTES, canonicalUrl, getSeo, renderHeadTags } from '../src/seo.js'
 
 const root = path.resolve(import.meta.dirname, '..')
 const dist = path.join(root, 'dist')
@@ -102,6 +102,33 @@ for (const route of ROUTES) {
   await writeHtml(file, html)
   console.log(`prerendered ${route.padEnd(14)} ${(html.length / 1024).toFixed(1)} KB`)
 }
+
+
+// Canonical sanity check: exactly one canonical per page, pointing to the page
+// itself, and sitemap.xml listing exactly those same addresses.
+const problems = []
+const sitemap = await readFile(path.join(dist, 'sitemap.xml'), 'utf8')
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
+for (const route of ROUTES) {
+  const file = route === '/' ? path.join(dist, 'index.html') : path.join(dist, route, 'index.html')
+  const html = await readFile(file, 'utf8')
+  const canonicals = [...html.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map((m) => m[1])
+  const expected = canonicalUrl(route)
+  if (canonicals.length !== 1 || canonicals[0] !== expected) {
+    problems.push(`${route}: canonical ${JSON.stringify(canonicals)} (expected one: ${expected})`)
+  }
+  if (!sitemapUrls.includes(expected)) problems.push(`${route}: ${expected} is not in sitemap.xml`)
+}
+const expectedUrls = ROUTES.map(canonicalUrl)
+for (const url of sitemapUrls) {
+  if (!expectedUrls.includes(url)) problems.push(`sitemap.xml lists ${url}, which is not a canonical page`)
+}
+if (problems.length) {
+  console.error('Canonical check failed:')
+  for (const p of problems) console.error('  ' + p)
+  process.exit(1)
+}
+console.log('canonical check ok: one canonical per page, sitemap.xml matches')
 
 await rm(path.join(dist, '.vite'), { recursive: true, force: true })
 

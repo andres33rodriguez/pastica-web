@@ -88,8 +88,13 @@ export function getSeo(pathname, lang = 'es') {
   return (SEO[normalize(pathname)] || NOT_FOUND)[lang] || NOT_FOUND.es;
 }
 
+/**
+ * The one address of a page: absolute, https + www, no trailing slash except
+ * the home page ("https://www.pastica.com/"). Also what sitemap.xml lists.
+ */
 export function canonicalUrl(pathname) {
-  return pathname === '/' ? `${SITE_URL}/` : `${SITE_URL}${pathname}`;
+  const path = normalize(pathname);
+  return path === '/' ? `${SITE_URL}/` : `${SITE_URL}${path}`;
 }
 
 const escapeHtml = (s) =>
